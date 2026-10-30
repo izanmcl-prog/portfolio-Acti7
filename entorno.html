@@ -3,40 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entorno de trabajo | Mi portfolio</title>
 </head>
 <body>
-    <h1>Mi entorno de trabajo</h1>
-    <h2>qué ocurre desde que escribes una URL hasta que ves la página</h2>
-    <p>Primero, escribes la URL. Segundo, ocurre la resolución DNS con la que el navegador averigua la IP del dominio. En tercer lugar ocurre la conexión tcp, donde el navegador abre una conexión con el servidor en el puerto correspondiente. En cuarto lugar el servidor procesa y responde con el HTML y por último el navegador pinta la página</p>
-    <h2>qué herramientas usas (VS Code, extensiones, Live Server, Git) y para qué</h2>
-    <p>Utilizo VS Code para escribir y editar código. Dentro de VS code utilizo la extensión "Live Server", que me permite ver la previsualización de mi página. Por último utilizo Git, que se sincroniza con mis carpetas de VS Code, para guardar todo el proceso de mis proyectos.</p>
-    <h2>a estructura de carpetas de tu portfolio, dentro de un pre</h2>
-    <pre>
-        portfolio
-        |_entorno.html
-        |_index.html
-        |_README.md
-    </pre>
-<nav aria-label="Menú principal">
-    <ul>
-        <li>
-            <a href="index.html"">Inicio</a>
-        </li>
-        <li>
-            <a href="sobre-mi.html">Sobre mí</a>
-        </li>
-        <li>
-            <a href="entorno.html" aria-current="page">Entorno</a>
-        </li>
-    </ul>
-</nav>
-<h1>Mi entorno</h1>
+    <a href="#contenido">Saltar al contenido</a>
 
-    <section id="estudios">
-        <h2>Mis estudios</h2>
-        <p>Aquí puedes explicar qué estás estudiando.</p>
-    </section>
+    <header>
+        <h1>Mi entorno de trabajo</h1>
 
+        <nav aria-label="Menú principal">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="sobre-mi.html">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="entorno.html" aria-current="page">Entorno</a>
+                </li>
+                <li>
+                    <a href="proyectos.html">Proyectos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section id="url">
+            <h2>¿Qué ocurre desde que escribes una URL hasta que ves la página?</h2>
+
+            <p>
+                Primero, escribes la URL. Segundo, ocurre la resolución
+                DNS, con la que el navegador averigua la IP del dominio.
+                En tercer lugar, ocurre la conexión TCP, donde el navegador
+                abre una conexión con el servidor en el puerto correspondiente.
+                En cuarto lugar, el servidor procesa y responde con el HTML
+                y, por último, el navegador pinta la página.
+            </p>
+        </section>
+
+        <section id="herramientas">
+            <h2>¿Qué herramientas utilizo y para qué?</h2>
+
+            <p>
+                Utilizo VS Code para escribir y editar código.
+                Dentro de VS Code utilizo la extensión Live Server,
+                que me permite ver la previsualización de mi página.
+                Por último, utilizo Git para registrar los cambios
+                y gestionar las versiones de mis proyectos.
+            </p>
+        </section>
+
+        <section id="carpetas">
+            <h2>La estructura de carpetas de mi portfolio</h2>
+
+            <pre>
+portfolio/
+├── index.html
+├── sobre-mi.html
+├── entorno.html
+├── proyectos.html
+└── README.md
+            </pre>
+        </section>
+
+        <section id="estudios">
+            <h2>Mis estudios</h2>
+
+            <p>
+                Estudio un grado superior de Desarrollo de Aplicaciones
+                Multiplataforma (DAM).
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Autor: Izan | Año: 2026</p>
+        <p>
+            <a href="https://github.com/"
+               target="_blank"
+               rel="noopener noreferrer">Mi GitHub</a>
+        </p>
+    </footer>
 </body>
 </html>
